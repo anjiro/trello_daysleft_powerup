@@ -1,0 +1,20 @@
+{
+  "name": "Days Till Due",
+  "description": "",
+  "details": "Show how many days till the card is due.",
+  "icon": {
+    "url": "./logo.png"
+  },
+  "author": "Daniel Ashbrook",
+  "capabilities": [
+    "card-badges"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "./index.html"
+    }
+  },
+  "recommend": {
+    "urls": []
+  }
+}
