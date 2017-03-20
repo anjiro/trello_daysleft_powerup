@@ -7,9 +7,11 @@ var getBadges = function(t)
 				return [];
 			var dueDate = new Date(Date.parse(cardDue));
 			var daysLeft = Math.floor((dueDate - Date.now())/(3600*24*1000)) + 1;
-			console.log("dueDate:", dueDate);
-			console.log("daysLeft:", daysLeft);
-			return [{text: daysLeft, color: 'red'}];
+			return [{
+				text: daysLeft,
+				color: 'red',
+				refresh: 3600
+			}];
 		}
 	)
 };
